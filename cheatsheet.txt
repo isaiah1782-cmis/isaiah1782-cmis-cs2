@@ -1,0 +1,5 @@
+List of Commands for Computer Science 2!
+
+- git add filename
+- git commit -m "Commit message"
+- git push
