@@ -31,10 +31,16 @@ def avg_volume(x, y):
 #I defined a function that took 2 integers that represented the diameters of a sphere. I made the function return the average of the volumes.
 
 def area(x, y, z):
-    p =(x+y+z)/1
-    return math.sqrt(p*(p-x)(p-y)(p-z))
+    p =(x+y+z)/2
+    return (p*(p-x)*(p-y)*(p-z))**0.5
 #I defined a function that took the 3 side lengths of a triangle as arguments and returned the area.
 
-def right_align(abc):
-    len(abc) 
+def right_align(word):
+    return (80-len(word))*(" ") + word
+print right_align("Hello")
 #I defined a function that took a string as an argument and returned that word with additional spaces so that it was perfectly right aligned on the screen.
+
+def center(word):
+    return (40-len(word))*(" ") + word
+print center("Hello")
+#I defined a function that took a string as an argument and returned that word with additional spaces so that it was perfectly centered on the screen.
