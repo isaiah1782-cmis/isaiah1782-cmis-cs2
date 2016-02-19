@@ -42,26 +42,65 @@ g2 = sphere_volume(100)**3
 #I defined a function that took 1 argument that represented the radius of a sphere and returned the volume.
 
 def avg_volume(x, y):
-    return ((4/3 * math.pi(x)**3)+(4/3 * math.pi(y)**3))/2
-
-h1 = avg_volume(3, 4)**3
-h2 = avg_volume(5, 20)**3
+    h1 = x/2
+    h2 = y/2
+    x = 4/3*math.pi*h1*h1*h1
+    z = 4/3*math.pi*h2*h2*h2
+    return (y+z)/2
+h3 = avg_volume(9, 10)
+h4 = avg_volume(50, 100)
 #I defined a function that took 2 integers that represented the diameters of a sphere. I made the function return the average of the volumes.
 
 def area(x, y, z):
     p =(x+y+z)/2
     return (p*(p-x)*(p-y)*(p-z))**0.5
+i1 = area(1, 2, 2.5)
+i2 = area(10, 20, 25)
 #I defined a function that took the 3 side lengths of a triangle as arguments and returned the area.
 
 def right_align(word):
     return (80-len(word))*(" ") + word
+j1 = right_align("Hello")
+j2 = right_align("Its me")
 #I defined a function that took a string as an argument and returned that word with additional spaces so that it was perfectly right aligned on the screen.
 
 def center(word):
     return (40-len(word))*(" ") + word
+k1 = center("Hi")
+k2 = center("Eat Frogs!")
 #I defined a function that took a string as an argument and returned that word with additional spaces so that it was perfectly centered on the screen.
 
 def msg_box(word):
-    return "+" + ((len(word)+4)*"-")+"+"+"\n"+"|"+(2*"")+(word)+(2*"")+"|"+"\n"+"+"+((len(word)+4)*"-")+"+"
-z1 = msg_box("Hello")
-z2 = msg_box("I eat cats!")
+    return "+" + ((len(word)+4)*"-") + "+" + "\n" + "|" + (2*" ") + (word) + (2*" ") + "|" + "\n" + "+" + ((len(word)+4)*"-") + "+"
+l1 = msg_box("Hello")
+l2 = msg_box("I eat cats!")
+# I defined a function that took a string as an argument and returned the message box like below:
+#+---------+
+#|  Hello  |
+#+---------+
+#+---------------+
+#|  I eat cats!  |
+#+---------------+
+
+print msg_box(str(a1))
+print msg_box(str(a2))
+print msg_box(str(b1))
+print msg_box(str(b2))
+print msg_box(str(c1))
+print msg_box(str(c2))
+print msg_box(str(e1))
+print msg_box(str(e2))
+print msg_box(str(f1))
+print msg_box(str(f2))
+print msg_box(str(g1))
+print msg_box(str(g2))
+print msg_box(str(h3))
+print msg_box(str(h4))
+print msg_box(str(i1))
+print msg_box(str(i2))
+print msg_box(str(j1))
+print msg_box(str(j2))
+print msg_box(str(k1))
+print msg_box(str(k2))
+print l1
+print l2
