@@ -1,6 +1,6 @@
 import math
 
-print "Volume of a cube calculator:"
+print "Area of a Triangle calculator:"
 print ""
 
 def area(x, y, z):
@@ -14,4 +14,4 @@ units = raw_input("What's the measurement?(If you don't know then just say 'Unit
 
 a = area(int(l), int(w), int(h))
 
-print "The volume of your cube is " + str(a) + str(units) + "³."
+print "The area of your triangle is " + str(a) + str(units) + "³."
