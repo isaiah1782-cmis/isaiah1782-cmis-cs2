@@ -10,8 +10,8 @@ def area(x, y, z):
 l = raw_input("What's the length?: ")
 w = raw_input("What's the width?: ")
 h = raw_input("What's the hieght?: ")
-units = raw_input("What's the units?: ")
+units = raw_input("What's the measurement?(If you don't know then just say 'Units'): ")
 
-a = area(int(l), int(w), int(h)
+a = area(int(l), int(w), int(h))
 
-print str(a) + str(units)
+print "The volume of your cube is " + str(a) + str(units) + "³."
