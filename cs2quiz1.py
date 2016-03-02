@@ -55,7 +55,7 @@ C3 = raw_input("Area of C3: ")
 def circle_diameter(area):
     return math.sqrt(((area) / math.pi)) + math.sqrt(((area) / math.pi))
 
-
+print ""
 
 CD1 = math.sqrt(((float(C1)) / math.pi)) + math.sqrt(((float(C1)) / math.pi))
 CD2 = math.sqrt(((float(C2)) / math.pi)) + math.sqrt(((float(C2)) / math.pi))
