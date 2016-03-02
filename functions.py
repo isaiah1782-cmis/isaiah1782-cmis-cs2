@@ -18,7 +18,7 @@ c2 = mul(2, 8)
 #I defined a function for each of the four basic math operations (+, -, *, /). I made each function took 2 arguments and returned the result.
 
 def div(x, y):
-    return x / y
+    return float(x) / float(y)
 d1 = div(2, 3)
 d2 = div(21, 14.000000007)
 #I defined a function for each of the four basic math operations (+, -, *, /). I made each function took 2 arguments and returned the result.
@@ -44,8 +44,8 @@ g2 = sphere_volume(100)**3
 def avg_volume(x, y):
     h1 = x/2
     h2 = y/2
-    x = 4/3*math.pi*h1*h1*h1
-    z = 4/3*math.pi*h2*h2*h2
+    x =  sphere_volume(h1)
+    z =  sphere_volume(h2)
     return (y+z)/2
 h3 = avg_volume(9, 10)
 h4 = avg_volume(50, 100)
@@ -88,6 +88,8 @@ print msg_box(str(b1))
 print msg_box(str(b2))
 print msg_box(str(c1))
 print msg_box(str(c2))
+print msg_box(str(d1))
+print msg_box(str(d2))
 print msg_box(str(e1))
 print msg_box(str(e2))
 print msg_box(str(f1))
