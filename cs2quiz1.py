@@ -53,13 +53,13 @@ C2 = raw_input("Area of C2: ")
 C3 = raw_input("Area of C3: ")
 
 def circle_diameter(area):
-    return math.sqrt((area) / math.pi)) + math.sqrt((area) / math.pi))
+    return math.sqrt(((area) / math.pi)) + math.sqrt(((area) / math.pi))
 
 
 
-CD1 = math.sqrt((float(C1)) / math.pi)) + math.sqrt((float(C1)) / math.pi))
-CD2 = math.sqrt((float(C2)) / math.pi)) + math.sqrt((float(C2)) / math.pi))
-CD3 = math.sqrt((float(C3)) / math.pi)) + math.sqrt((float(C3)) / math.pi))
+CD1 = math.sqrt(((float(C1)) / math.pi)) + math.sqrt(((float(C1)) / math.pi))
+CD2 = math.sqrt(((float(C2)) / math.pi)) + math.sqrt(((float(C2)) / math.pi))
+CD3 = math.sqrt(((float(C3)) / math.pi)) + math.sqrt(((float(C3)) / math.pi))
 
 Total = float(CD1) + float(CD2) + float(CD3)
 
