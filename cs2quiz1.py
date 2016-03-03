@@ -1,7 +1,7 @@
 #Part 1: Terminology (15 points)
 #1 1pt) What is the symbol "=" used for?
 #
-# "=" Is the assignment operator/statement and it creates new variables and gives them values.
+# "=" Is the assignment operator/statement and it creates new variables and gives them values. 
 #
 #2 3pts) Write a technical definition for 'function'
 #
@@ -13,14 +13,14 @@
 # It is common to say that a function takes an argument and returns a result. The result is called the return value. This statement means: Return immediately from this function and use the 
 # following expression as a return value.
 #
-#4 5pts) We know 5 basic data types. Write the name for each one and provide two
+#4 X = 0 points 5pts) We know 5 basic data types. Write the name for each one and provide two
 #   examples of each below
 #	1: or ( 1>2 or 2>1) (454>123 or 123>454)
 #	2: and (1 == 1 and 2 == 2) (21 > 9 and 10 < 21)
 #	3: not (3>2 not 2>3) (54>1 not 1>54)
 #	4: is (1 is 1.0) (5 is 5.0)
 #	5: if (True == False if False == True) (1>2 if 2<1)
-#
+# 
 #5 2pts) What is the difference between a "function definition" and a 
 #        "function call"?
 #
@@ -31,8 +31,14 @@
 #	1: input: puts in the command what you wrote.
 #	2: processing : the process of running the program.
 #	3: output : Gives the result.
-#
+# 
+
+# 10/15
+
 #Part 2: Programming (25 points)
+
+# 24/25
+
 #Write a program that asks the user for the areas of 3 circles.
 #It should then calculate the diameter of each and the sum of the diameters 
 #of the 3 circles.
@@ -68,3 +74,7 @@ print "c1      " + str(CD1)
 print "c2      " + str(CD2)
 print "c3      " + str(CD3)
 print "Totals  " + str(Total)
+
+# -1 for not commenting 
+
+# 34 / 40
