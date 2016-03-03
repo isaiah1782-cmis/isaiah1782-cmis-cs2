@@ -28,9 +28,9 @@
 #
 #6 3pts) What are the 3 phases that every computer program has? What happens in
 #        each of them?
-#	1: int() : This takes the string/number and truns it into an integer so that you can use it to do math problems.
-#	2: str() : This takes anything and puts it into a string so that you can print out a sentence with numbers.
-#	3: float() :This takes any number/integer and turns it into a decimal.
+#	1: input: puts in the command what you wrote.
+#	2: processing : the process of running the program.
+#	3: output : Gives the result.
 #
 #Part 2: Programming (25 points)
 #Write a program that asks the user for the areas of 3 circles.
