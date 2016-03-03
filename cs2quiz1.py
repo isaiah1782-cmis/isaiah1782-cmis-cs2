@@ -64,7 +64,7 @@ CD3 = math.sqrt(((float(C3)) / math.pi)) + math.sqrt(((float(C3)) / math.pi))
 Total = float(CD1) + float(CD2) + float(CD3)
 
 print "Circle  Diameter"
-print "c1      " + str(C1)
-print "c2      " + str(C2)
-print "c3      " + str(C3)
+print "c1      " + str(CD1)
+print "c2      " + str(CD2)
+print "c3      " + str(CD3)
 print "Totals  " + str(Total)
