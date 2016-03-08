@@ -96,7 +96,7 @@ print("The clock has now started! GO MY CHILD!!!")
 #go through the list of questions
 for q in questions:
     #display question and get answer
-    answer = response(q + ": ", ['t','f']) == 't'
+    answer = response(q + ": ", ['tz','f']) == 't'
     result = eval(q)
     #compare answer to actual result
     if answer == result:
