@@ -15,82 +15,31 @@ def response(prompt, allowed):
 
 #the list of questions
 questions = [
-    "0 + 0 == 0",
-    "1 + 1 == 1",
-    "1 * 1",
+    "0 + 0 = 0",
+    "1 + 1 = 1",
+    "1 * 1 == 2",
     "2 + 2 == 4",
-    "2 * 2",
+    "2 * 2 == 4",
     "3 + 3 == 6",
-
-    "4 + 4 == 8",
-
+    "3 * 3 == 9",
+    "4 + 4 == 16",
+    "4 * 4 == 16",
     "5 + 5 == 10",
-
+    "5 * 5 == 25",
     "6 + 6 == 36",
-
-    "7 + 7 == 14",
-
+    "6 * 6 == 12",
+    "7 + 7 == 16",
+    "7 * 7 == 14",
     "8 + 8 == 15",
-
+    "8 * 8 == 16",
     "9 + 9 == 18",
-
+    "9 * 9 == 81",
     "10 + 10 == 100",
-
-    "11 + 11",
-
-    "12 + 12",
-
-
-
-    "3 * 3",
-    "4 * 4",
-    "5 * 5",
-    "6 * 6",
-    "7 * 7",
-    "8 * 8",
-    "9 * 9",
-    "10 * 10",
-    "11 * 11",
-    "12 * 12",
-    "0 - 12",
-    "1 - 11",
-    "2 - 10",
-    "3 - 9",
-    "4 - 8",
-    "5 - 7",
-    "6 - 6",
-    "7 - 5",
-    "8 - 4",
-    "9 == 3",
-    "10 == 2",
-    "11== 1",
-    "12 == 0",
-    "1 == 1",
-    "1 == 1",
-    "1 == 1",
-    "1 == 1",
-    "1 == 1",
-    "1 == 1",
-    "1 == 1",
-    "1 == 1",
-    "1 == 1",
-    "1 == 1",
-    "1 == 1",
-    "1 == 1",
-    "1 == 1",
-    "1 == 1",
-    "1 == 1",
-    "1 == 1",
-    "1 == 1",
-    "1 == 1",
-    "1 == 1",
-    "1 == 1",
-    "1 == 1",
-    "1 == 1",
-    "1 == 1",
-    "1 == 1",
-    "1 == 1",
-    "1 == 1",
+    "10 * 10 == 100",
+    "11 + 11 == 121",
+    "11 * 11 == 221",
+    "12 + 12 == 48",
+    "12 * 12 == 144",
     ]
 
 #score keeping variables
@@ -100,7 +49,7 @@ incorrect = 0
 #Display some instructions and wait
 print("Type 't' to answer for True.")
 print("Type 'f' to answer for False.")
-input("Hit the 'enter' or 'return' button to begin")
+print("Hit the 'enter' or 'return' button to begin")
 
 #start the timer
 start = time.time()
@@ -113,7 +62,7 @@ for q in questions:
     result = eval(q)
     #compare answer to actual result
     if answer == result:
-        print("CONGRATULATIONS YOU GOT IT RIGHT! MOVE ON!")
+        print("CONGRATULATIONS YOU GOT IT RIGHT! MOVE ON TO THE NEXT QUESTION!")
         correct += 1
     else:
         print("I'm sorry but what you said is wrong! Please try again!")
@@ -128,4 +77,4 @@ print("Sadly, you got ", incorrect, " question(s) incorrect.")
 if incorrect > 0:
     print("I'm sorry but you have not passed! But DON'T CRY because you can just type 'python3 randomquiz.py' to retake the quiz again!")
 else:
-    print("FABULOS! 100%! YOU PASSED WITH FLYING COLOURS! CONRATS! :D Give yourself a pat on the back if you have arms. Type 'python3 randomquiz.py' to take the quiz again and prove yourself that you're FABULOS AGAIN! :)")
+    print("FABULOS! 100%! YOU PASSED WITH FLYING COLOURS! CONRATS! :D Give yourself a pat on the back if you have arms. Type 'python3 randomquiz.py' to take the quiz again and beat your highscore!")
