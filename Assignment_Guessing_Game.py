@@ -26,17 +26,24 @@ def You_Guessed_it():
         a = "Congrats!"
     return a
 
-def Under_or_Over():
-    if str(Finding_a_Number()) > Guess:
-        return True
-    elif str(Finding_a_Number()) < Guess:
-        return False
-
-def Is_Under_or_Over_True_or_False():
-    if Under_or_Over() == True:
-        x = "That's over by "
-    if Under_or_Over() == False:
-        x = "That's under by "
-    return x
-
-print Is_Under_or_Over_True_or_False()
+def Correct_or_Over_or_under
+    if target == your_number: 
+		print """
+Your target was {}.
+Your guess was {}.
+That's correct! You must be psychic!
+		""".format(target, your_number)
+	elif target > your_number:
+		sub = target - your_number
+		print """
+Your target was {}.
+Your guess was {}.
+That's under by {}.
+		""".format(target, your_number, sub)
+	elif target < your_number:
+		sub = your_number - target 
+		print """
+Your target was {}.
+Your guess was {}.
+That's over by {}.
+		""".format(target, your_number, sub)
