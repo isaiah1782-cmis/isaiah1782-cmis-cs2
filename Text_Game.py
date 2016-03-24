@@ -7,6 +7,7 @@ print "Hello " + str(Users_name) + "! Welcome to Isaiah's Text Game! Enjoy! :D"
 print ""
 
 First_Random_Number = random.randint(1000, 9999)
+Last_Random_Number = 32871 - 19998 - int(First_Random_Number)
 
 print "So to start us off, I'm going to generate a random number."
 print "Hmm.... I'll put down " + str(First_Random_Number) + "."
@@ -25,11 +26,11 @@ def making_a_Random_Four_Digit_Number1():
         answer = 0
         print """Um """ + str(Users_name) + """, """ +  """ " """ + str(Users_Random_Four_Digit_Number) + """ " """ + """ is not a four digit number. An example of a four digit number is 1782 NOT 123 or 12345. Nice try though."""
         print ""
-        print "Please redo the game again, " + str(Users_name) +  "."
+        print "Please redo the game again, " + str(Users_name) +  ".(Press the 'Enter' key twice)"
     elif Users_Random_Four_Digit_Number == 0000 or 1111 or 2222 or 3333 or 4444 or 5555 or 6666 or 7777 or 8888 or 9999:
         answer = 0
         print """Haha """ + str(Users_Random_Four_Digit_Number) + """ isn't a very creatively random 4 digit number."""
-        print "Please redo the game again, " + str(Users_name) +  "."
+        print "Please redo the game again, " + str(Users_name) +  ".(Press the 'Enter' key twice)"
     return answer
 
 x = making_a_Random_Four_Digit_Number1() #Programmer's Checkpoint
@@ -46,11 +47,22 @@ def making_a_Random_Four_Digit_Number2():
         answer = 0
         print """Um """ + str(Users_name) + """, """ +  """ " """ + str(Users_Random_Four_Digit_Number2) + """ " """ + """ is not a four digit number. An example of a four digit number is 1782 NOT 123 or 12345. Nice try though."""
         print ""
-        print "Please redo the game again, " + str(Users_name) +  "."
+        print "Please redo the game again, " + str(Users_name) +  ".(Press the 'Enter' key twice)"
     elif Users_Random_Four_Digit_Number2 == 0000 or 1111 or 2222 or 3333 or 4444 or 5555 or 6666 or 7777 or 8888 or 9999:
         answer = 0
         print """Haha """ + str(Users_Random_Four_Digit_Number2) + """ isn't a very creatively random 4 digit number."""
-        print "Please redo the game again, " + str(Users_name) +  "."
+        print "Please redo the game again, " + str(Users_name) +  ".(Press the 'Enter' key twice)"
     return answer
 
 y = making_a_Random_Four_Digit_Number2() #Programmer's Checkpoint
+
+print ""
+print "Ok! Now we're almost done. I am now going to add the final randomly generated number."
+print "I will say " + str(Last_Random_Number) + "!"
+print ""
+
+print "Yay! We are now done!"
+print "Now... Time for the magic!"
+print "You see, if we add all those numbers that we put down... what do we get?"
+print ""
+print "We get " + int(First_Random_Number) + int(Users_Random_Four_Digit_Number) + int(x) + int(Users_Random_Four_Digit_Number2) + int(y) + int(Last_Random_Number) + "!"
