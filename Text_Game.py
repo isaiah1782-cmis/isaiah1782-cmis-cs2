@@ -2,11 +2,12 @@ import math
 import random
 
 Users_name = raw_input("Hello! What is your name?: ")
+What_the_User_Wants_My_Name_To_Be = raw_input("What would you like to call me?(The friendly program): ")
 print ""
-print "Hello " + str(Users_name) + "! Welcome to Isaiah's Text Game! Enjoy! :D"
+print "Hello " + str(Users_name) + "! Welcome to " + str(What_the_User_Wants_My_Name_To_Be) + "'s Text Game! Enjoy! :D"
 print ""
 print ""
-print "Go to Google images and look up '32871'."
+print "Go to Google images and look up '{0}'.".format(1782 + 31089)
 print ""
 print ""
 First_Random_Number = random.randint(1000, 9999)
