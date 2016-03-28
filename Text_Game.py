@@ -1,6 +1,12 @@
 import math
 import random
 
+#Description:
+#First: The friendly program asks you what your name is and what you want it to be called. Then it welcomes the user to it's program.
+#Second: The program asks the user to go to Google images and search for "1782 + 31089".
+#Third: It puts down a random number and then asks the user to put in a random number and then it puts down another random number and then it asks the user to put down another random number and then it puts down a random number. If the user puts down something that isn't what the program asks for (including numbers that aren't creative), it will tell the user what they did wrong and how they should do it.
+#Forth: It adds all the random numbers that were put down and then it gets a magic number.
+#Fifth: It asks the user if the user was amused. If the user said that the user was confused, then it will explain.
 Users_name = raw_input("Hello! What is your name?: ")
 What_the_User_Wants_My_Name_To_Be = raw_input("What would you like to call me?(The friendly program): ")
 print ""
@@ -10,6 +16,7 @@ print ""
 print "Go to Google images and look up '{0}'.".format(1782 + 31089)
 print ""
 print ""
+
 First_Random_Number = random.randint(1000, 9999)
 Last_Random_Number = ((1782 + 31089) - (1782 + 18216)) - int(First_Random_Number)
 Most_Important_Number = random.random()
