@@ -13,7 +13,7 @@ print ""
 print "Hello " + str(Users_name) + "! Welcome to " + str(What_the_User_Wants_My_Name_To_Be) + "'s Text Game! Enjoy! :D"
 print ""
 print ""
-print "Go to Google images and look up '{0}'.".format(1782 + 31089)
+print "{0}".format(1782 + 31089)
 print ""
 print ""
 
@@ -39,10 +39,12 @@ def making_a_Random_Four_Digit_Number1():
         print """Um """ + str(Users_name) + """, """ +  """ " """ + str(Users_Random_Four_Digit_Number) + """ " """ + """ is not a four digit number. An example of a four digit number is 1782 NOT 123 or 12345. Nice try though."""
         print ""
         print "Please redo the game again, " + str(Users_name) +  ".(Press the 'Enter' key twice)"
+        print ""
     elif Users_Random_Four_Digit_Number == 0000 or 1111 or 2222 or 3333 or 4444 or 5555 or 6666 or 7777 or 8888 or 9999:
         answer = 0
         print """Haha """ + str(Users_Random_Four_Digit_Number) + """ isn't a very creatively random 4 digit number."""
         print "Please redo the game again, " + str(Users_name) +  ".(Press the 'Enter' key twice)"
+        print ""
     return answer
 
 x = making_a_Random_Four_Digit_Number1() #Programmer's Checkpoint
@@ -75,24 +77,26 @@ print ""
 
 print "Yay! We are now done!"
 print "Now... Time for the magic!"
-print "You see, if we add all those numbers that we put down... what do we get?"
+print "You see, if we add all those numbers that we put down (You can use a calculator)... what do we get?"
+print ""
 print ""
 print "We get " + str(int(First_Random_Number) + int(Users_Random_Four_Digit_Number) + int(x) + int(Users_Random_Four_Digit_Number2) + int(y) + int(Last_Random_Number)) + "!"
-print "Cool Eh?"
-print ""
 print ""
 print ""
 If_User_Thought_That_The_Text_Game_Was_Cool = raw_input("Did you like the game?(You can type 'Yes', 'No', or 'I didn't understand'): ")
 
 def If_User_Thought_That_The_Text_Game_Was_Cool_Response():
     if str(If_User_Thought_That_The_Text_Game_Was_Cool) == "Yes" or str(If_User_Thought_That_The_Text_Game_Was_Cool) == "yes" or str(If_User_Thought_That_The_Text_Game_Was_Cool) == "YES":
+        print ""
         print "Great! My Job here is now done. Thanks for participating, " + str(Users_name) + ", and have a good day! :)"
         No = False
         x = bool(No)
     elif str(If_User_Thought_That_The_Text_Game_Was_Cool) == "No" or str(If_User_Thought_That_The_Text_Game_Was_Cool) == "no" or str(If_User_Thought_That_The_Text_Game_Was_Cool) == "NO":
         No = raw_input("Did you understand what was going on?(Yes or No): ")
-        if No == Yes:
+        if No == "Yes" or No == "yes" or No == "YES":
             print "Oh well. Have a good day and thanks for participating, " + str(Users_name) + "!"
+        elif No == "No" or No == "no" or No == "NO":
+            print "Well what did I tell you to look up on Goole images?"
     elif str(If_User_Thought_That_The_Text_Game_Was_Cool) == "I didn't understand" or str(If_User_Thought_That_The_Text_Game_Was_Cool) == "i didn't understand" or str(If_User_Thought_That_The_Text_Game_Was_Cool) == "i didnt understand" or str(If_User_Thought_That_The_Text_Game_Was_Cool) == "I don't get it" or str(If_User_Thought_That_The_Text_Game_Was_Cool) == "I dont get it" or str(If_User_Thought_That_The_Text_Game_Was_Cool) == "i dont get it" or str(If_User_Thought_That_The_Text_Game_Was_Cool) == "i don't get it":
         print ""
         print "Well what did I tell you to look up on Goole images?"
