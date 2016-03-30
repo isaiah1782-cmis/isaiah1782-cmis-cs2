@@ -1,16 +1,15 @@
 import math
 
-print "Area of a Triangle calculator:"
-print ""
-
 def area(width, height):
     area = (width * height) * 0.5
     return area
 
 def sphere_volume(radius):
-    return 4/3 * (math.pi * (radius))
+    return 4/3 * math.pi * (radius) * (radius) * (radius)
 
 def main():
+    print "Area of a Triangle calculator:"
+    print ""
     w = raw_input("What's the base?: ")
     h = raw_input("What's the hieght?: ")
     units = raw_input("What's the measurement?(If you don't know then just say 'Units'): ")
@@ -24,6 +23,6 @@ def main():
     units1 = raw_input("What's the measurement?(If you don't know then just say 'Units'): ")
     volume_of_Sphere = sphere_volume(int(radius))
     print ""
-    print "The volume of your sphere is {}".format(int(volume_of_Sphere)) + str(units) + "."
+    print "The volume of your sphere is {}".format(int(volume_of_Sphere)) + str(units) + " cubed."
 
 main()
