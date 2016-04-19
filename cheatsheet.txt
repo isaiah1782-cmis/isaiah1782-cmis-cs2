@@ -4,6 +4,8 @@ List of Commands for Computer Science 2!
 - git commit -m "Commit message"
 - git push
 
+http://www.greenteapress.com/thinkpython/html/thinkpython001.html
+
 ❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤
 
 ❤ ❤
