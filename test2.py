@@ -1,10 +1,12 @@
-n = int(raw_input("Count: "))
+a = int(raw_input("Starting number: "))
 
-def countdown(n):
-    if n == 10 or n >= 10:
+b = int(raw_input("Ending number: "))
+
+def countdown(start, stop):
+    if a == b or a >= b:
         print 'Blastoff!'
     else:
-        print n
-        (countdown(n+1))
+        print a
+        (countdown(a+1))
 
-countdown(n)
+countdown(a, b)
