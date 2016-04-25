@@ -1,11 +1,12 @@
-import sys
-print "Running total : 0"
-Next = float(raw_input("Next number: "))
-
-def adder():
+def adder(Number):
     Running_Total = 0
-    print "Running total : " + str(float(Running_Total))
-    Next = float(raw_input("Next number: "))
-    adder(Running_Total + Next)
+    Running_Total += Number
+    Next = raw_input("Next number: " + str(Running_Total) + """:
+Next number: """
+    if Next == "":
+        exit("The sum is " + str(Running_Total))
+    else:
+        Total += int(Next)
+        adder(Running_Total)
 
-adder()
+adder(0)
