@@ -1,12 +1,15 @@
+import sys
+print "The running number is 0"
+
 def adder(Number):
     Running_Total = 0
     Running_Total += Number
-    Next = raw_input("Next number: " + str(Running_Total) + """:
-Next number: """
+    Next = raw_input("Next number: ")
     if Next == "":
-        exit("The sum is " + str(Running_Total))
+        sys.exit("The sum is " + str(Running_Total))
     else:
-        Total += int(Next)
+        Running_Total += int(Next)
+        print "The running number is " + str(Running_Total)
         adder(Running_Total)
 
 adder(0)
