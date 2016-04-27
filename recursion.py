@@ -1,3 +1,4 @@
+import sys
 #Assignments: Countdown, Countup, Countdown from start to finish, Countup from finish to start
 
 a = int(raw_input("Starting number: "))
@@ -22,4 +23,37 @@ countdown(a, b)
 print ""
 countup(a, b)
 
-#Biggest, smallest, and pow(x, n):
+#Assignments: Biggest, Smallest, and pow(x, n):
+print ""
+
+def biggest(lastnumber):
+	number = raw_input("Next: ")
+	if number == '':
+		print "The biggest number is " + str(lastnumber) + "."
+	elif float(number) > lastnumber:
+		biggest(float(number))
+	else:
+		biggest(lastnumber)
+
+biggest(-float("inf"))
+
+print ""
+
+
+
+print ""
+
+print "The running number is 0"
+
+def adder(Number):
+    Running_Total = 0
+    Running_Total += Number
+    Next = raw_input("Next number: ")
+    if Next == "":
+        sys.exit("The sum is " + str(Running_Total))
+    else:
+        Running_Total += int(Next)
+        print "The running number is " + str(Running_Total)
+        adder(Running_Total)
+
+adder(0)
