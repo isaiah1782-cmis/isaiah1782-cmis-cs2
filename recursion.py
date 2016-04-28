@@ -1,4 +1,5 @@
 import sys
+import math
 #Assignments: Countdown, Countup, Countdown from start to finish, Countup from finish to start
 
 a = int(raw_input("Starting number: "))
@@ -19,28 +20,75 @@ def countup(start, stop):
         print stop
         countup(start, stop-1)
 
-countdown(a, b)
 print ""
+print "Countup:"
+print ""
+
+countdown(a, b)
+
+print ""
+print "Countdown:"
+print ""
+
 countup(a, b)
 
-#Assignments: Biggest, Smallest, and pow(x, n):
+#Assignments: Biggest, Smallest, pow(x, n), and Adder:
+print ""
+print "Finding the Biggest number:"
 print ""
 
-def biggest(lastnumber):
+def biggest(biggest_number):
 	number = raw_input("Next: ")
-	if number == '':
-		print "The biggest number is " + str(lastnumber) + "."
-	elif float(number) > lastnumber:
+	if number == "":
+		print "The biggest number is " + str(biggest_number) + "."
+	elif float(number) > biggest_number:
 		biggest(float(number))
 	else:
-		biggest(lastnumber)
+		biggest(biggest_number)
 
 biggest(-float("inf"))
 
 print ""
+print "Finding the Smallest number:"
+print ""
 
+def smallest(smallest_number):
+    number = raw_input("Next: ")
+    if number == "":
+        print "The smallest number is " + str(smallest_number) + "."
+    elif float(number) < smallest_number:
+        smallest(float(number))
+    else:
+        smallest(smallest_number)
 
+smallest(float("inf"))
 
+print ""
+print "Finding the Power"
+print ""
+
+x = raw_input("Number: ")
+n = raw_input("Power: ")
+
+def pow(x, n):
+    if x == 0:
+        return 0
+    elif n == 0:
+        return 1
+    elif n == 0:
+        return x
+    elif n % 2 == 0:
+        even = pow(x, n/2)
+        return even * even
+    else:
+        n = (n-1)/2
+        odd = pow(x, n)
+        return x * odd * odd
+
+print pow(float(x), float(n))
+
+print ""
+print "Finding the total:"
 print ""
 
 print "The running number is 0"
