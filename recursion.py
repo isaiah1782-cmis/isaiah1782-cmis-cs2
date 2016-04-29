@@ -1,5 +1,4 @@
 import sys
-import math
 #Assignments: Countdown, Countup, Countdown from start to finish, Countup from finish to start
 
 a = int(raw_input("Starting number: "))

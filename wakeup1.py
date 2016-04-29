@@ -8,7 +8,7 @@ def main():
     division = 0
 #Input
     n0 = float(raw_input("""
-This program will ask you for 5 integer of float values.
+This program will ask you for 5 integers or float values.
 It will calculate the average of all values form 0 inclusive to 10 exclusive.
 It will print out whether the resulting average is even or odd.
 
