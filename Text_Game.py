@@ -4,7 +4,7 @@ import sys
 
 #Description:
 #First: The friendly program asks you what your name is and what you want it to be called. Then it welcomes the user to it's program.
-#Second: The program asks the user to go to Google images and search for "1782 + 31089".
+#Second: The Friendly program says a random strange number.
 #Third: It puts down a random number and then asks the user to put in a random number and then it puts down another random number and then it asks the user to put down another random number and then it puts down a random number. If the user puts down something that isn't what the program asks for (including numbers that aren't creative), it will tell the user what they did wrong and how they should do it.
 #Forth: It adds all the random numbers that were put down and then it gets a magic number.
 #Fifth: It asks the user if the user was amused. If the user said that the user was confused, then it will explain.
