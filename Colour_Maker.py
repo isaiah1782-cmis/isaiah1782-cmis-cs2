@@ -76,4 +76,5 @@ def Colour_Maker():
         print ""
         print '\033[1;{0}m\033[1;{1}m{2}\033[1;m\033[1;m'.format(output2, output, Text)
         print ""
+        Colour_Maker()
 Colour_Maker()
