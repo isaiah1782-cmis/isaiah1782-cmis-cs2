@@ -21,36 +21,59 @@ print '\033[1;47mGray\033[1;m'
 print ""
 
 def Colour_Maker():
+    output = 0
+    output2 = 0
     Colour = raw_input("Colour: ")
     if Colour == "":
         pass
     print ""
+    if Colour == "Red" or Colour == "red":
+        output += 31
+    if Colour == "Yellow" or Colour == "yellow":
+        output += 33
+    if Colour == "Green" or Colour == "green":
+        output += 32
+    if Colour == "Cyan" or Colour == "cyan":
+        output += 36
+    if Colour == "Blue" or Colour == "blue":
+        output += 34
+    if Colour == "Purple" or Colour == "purple":
+        output += 35
+    if Colour == "Gray" or Colour == "gray":
+        output += 30
+    if Colour == "White" or Colour == "white":
+        output += 37
     Highlight = raw_input("Highlight: ")
     if Highlight == "":
         pass
+    if Highlight == "Red" or Highlight == "red":
+        output2 += 41
+    if Highlight == "Yellow" or Highlight == "yellow":
+        output2 += 43
+    if Highlight == "Green" or Highlight == "green":
+        output2 += 42
+    if Highlight == "Cyan" or Highlight == "cyan":
+        output2 += 46
+    if Highlight == "Blue" or Highlight == "blue":
+        output2 += 44
+    if Highlight == "Purple" or Highlight == "purple":
+        output2 += 45
+    if Highlight == "Gray" or Highlight == "gray":
+        output2 += 47
+    print ""
+    Text = raw_input("Text: ")
+    if output == 0 and output2 == 0:
+        pass
+    if output != 0 and output2 == 0:
+        print ""
+        print '\033[1;{0}m{1}\033[1;m'.format(output2, Text)
+        print ""
+    if output == 0 and output2 != 0:
+        print ""
+        print '\033[1;{0}m{1}\033[1;m'.format(output, Text)
+        print ""
+    else:
+        print ""
+        print '\033[1;{0}m\033[1;{1}m{2}\033[1;m\033[1;m'.format(output2, output, Text)
+        print ""
 Colour_Maker()
-
-
-
-
-print ""
-print '\033[1;30mGray like Ghost\033[1;m'
-print '\033[1;31mRed like Radish\033[1;m'
-print '\033[1;32mGreen like Grass\033[1;m'
-print '\033[1;33mYellow like Yolk\033[1;m'
-print '\033[1;34mBlue like Blood\033[1;m'
-print '\033[1;35mMagenta like Mimosa\033[1;m'
-print '\033[1;36mCyan like Caribbean\033[1;m'
-print '\033[1;37mWhite like Whipped Cream\033[1;m'
-
-print '\033[1;41mHighlighted Red like Radish\033[1;m'
-print '\033[1;42mHighlighted Green like Grass\033[1;m'
-print '\033[1;43mHighlighted Brown like Bear\033[1;m'
-print '\033[1;44mHighlighted Blue like Blood\033[1;m'
-print '\033[1;45mHighlighted Magenta like Mimosa\033[1;m'
-print '\033[1;46mHighlighted Cyan like Caribbean\033[1;m'
-print '\033[1;47mHighlighted Gray like Ghost\033[1;m'
-
-print ""
-x = raw_input("Text: ")
-print '\033[1;44m\033[1;31m{0}\033[1;m\033[1;m'.format(x)
