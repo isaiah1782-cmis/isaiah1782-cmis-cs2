@@ -10,7 +10,7 @@ import sys
 #
 # 3) What is the first thing to consider when designing a recursive function?
 #
-#How it stops.
+#How it stops. (Base case)
 #
 # 4) How do we put data into a function call?
 #
@@ -29,16 +29,16 @@ import sys
 #a2 = 8
 #a3 = -1
 
-#b1 = 
-#b2 = 
-#b3 = 
+#b1 = 2
+#b2 = 2
+#b3 = 4
 
-#c1 = 
-#c2 = 
+#c1 = -2
+#c2 = 4
 #c3 = 
 
 #d1 = 6
-#d2 = 
+#d2 = 8
 #d3 = 
 
 #Section 3: Programming
