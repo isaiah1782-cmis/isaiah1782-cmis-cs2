@@ -1,3 +1,4 @@
+import sys
 print '\033[1;37mHello and welcome to my \033[1;m' + "" + '\033[1;31mC\033[1;m' + '\033[1;33mo\033[1;m' + '\033[1;32ml\033[1;m' + '\033[1;36mo\033[1;m' + '\033[1;34mu\033[1;m' + '\033[1;35mr\033[1;m' + " " + '\033[1;37mPrinter!\033[1;m'
 print ""
 print "Colours of Text:"
@@ -63,7 +64,7 @@ def Colour_Maker():
     print ""
     Text = raw_input("Text: ")
     if output == 0 and output2 == 0:
-        pass
+        sys.exit()
     if output != 0 and output2 == 0:
         print ""
         print '\033[1;{0}m{1}\033[1;m'.format(output2, Text)

@@ -75,22 +75,3 @@ def main(total, division):
         main(total, division)
 
 main(0, 0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
