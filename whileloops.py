@@ -1,19 +1,27 @@
-def countdown(x):
-    while x >= 0:
-        print x
-        x -= 1
+def countup_or_countdown(x, y):
+    if x > y:
+        while x >= y:
+            print x
+            x -= 1
+    else:
+        while x <= y:
+            print x
+            x += 1
 
-#countdown(10)
-#coutndown(23)
+countup_or_countdown(int(raw_input("Start: ")), int(raw_input("End: ")))
 
-def counter(x):
-    while x <= 0:
-        print x
-        x += 1
-    while x >= 0:
-        print x
-        x -= 1
+print ""
 
+def sum0f0dds(n):
+    while n % 2 == 0:
+        continue #WRONG
+    if n > 0:
+        while n < 1000:
+            print n
+            n += 1
+    if n < 0:
+        while n > -1000:
+            print n
+            n +- 1
 
-counter(10)
-counter(-10)
+sum0f0dds(int(raw_input("Number: ")))
